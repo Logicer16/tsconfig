@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@logicer/tsconfig",
+  "version": "1.0.0",
+  "description": "Logicer's Typescript Base Configuration",
+  "main": "tsconfig.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Logicer16/tsconfig.git"
+  },
+  "author": "logicer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Logicer16/tsconfig/issues"
+  },
+  "homepage": "https://github.com/Logicer16/tsconfig#readme",
+  "peerDependencies": {
+    "typescript": "*"
+  }
+}
