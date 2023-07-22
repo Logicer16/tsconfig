@@ -20,10 +20,10 @@ In the project's `tsconfig.json`:
   "extends": "@logicer/prettier-config",
   ... // Your modifications
   "compilerOptions": {
-		"outDir": "<out-directory>" // defaults to "./dist"
+		"outDir": "<out-directory>"
 	},
   "include": [
-    "<source-directory>" // defaults to "./src/**/*"
+    "<source-directory>"
   ]
 }
 ```
