@@ -106,9 +106,20 @@
 
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true,                                /* Skip type checking all .d.ts files. */
+
+    /* Plugins */
+    "plugins": [
+      {
+        "name": "ts-plugin-type-coverage",
+        "enableCache": true,
+        "strict": true,
+        "ignoreCatch": true,
+        "reportSemanticError": true
+      }
+    ]
   }
-  
+
   // Disabled until https://github.com/microsoft/TypeScript/issues/51213
   //},
   // "include": [

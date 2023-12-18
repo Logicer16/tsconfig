@@ -16,5 +16,6 @@
   "homepage": "https://github.com/Logicer16/tsconfig#readme",
   "peerDependencies": {
     "typescript": ">=5",
+    "ts-plugin-type-coverage": "^2.25.0"
   }
 }
