@@ -17,6 +17,7 @@ In the project's `tsconfig.json`:
 
 ```
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "@logicer/prettier-config",
   ... // Your modifications
   "compilerOptions": {
