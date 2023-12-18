@@ -15,6 +15,6 @@
   },
   "homepage": "https://github.com/Logicer16/tsconfig#readme",
   "peerDependencies": {
-    "typescript": "*"
+    "typescript": ">=5",
   }
 }
