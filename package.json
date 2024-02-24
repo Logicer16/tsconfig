@@ -6,6 +6,7 @@
   "type": "module",
   "main": "tsconfig.json",
   "scripts": {
+    "build": "tsc -p ./tsconfig.eslint.json",
     "style": "npm run lint && npm run prettier",
     "lint": "eslint . --fix --cache",
     "lint:ci": "eslint . --cache",

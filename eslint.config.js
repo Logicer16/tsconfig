@@ -34,7 +34,9 @@ const ignores = [
 const eslintPluginConfigs = [
   {
     languageOptions: {
+      ecmaVersion: 2024,
       parserOptions: {
+        ecmaVersion: 2024,
         project: ["./tsconfig.json", "./tsconfig.*.json"],
         sourceType: "module"
       }
