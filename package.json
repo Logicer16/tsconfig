@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "name": "@logicer/tsconfig",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "description": "Logicer's Typescript Base Configuration",
   "type": "module",
   "main": "tsconfig.json",
