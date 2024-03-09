@@ -5,6 +5,7 @@
 .eslintcache
 .gitattributes
 .gitignore
+.nvmrc
 .prettierrc.js
 eslint.config.js
 tsconfig.eslint.json

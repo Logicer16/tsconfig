@@ -25,13 +25,13 @@
   },
   "homepage": "https://github.com/Logicer16/tsconfig#readme",
   "peerDependencies": {
-    "ts-plugin-type-coverage": "^2.25.0",
-    "typescript": ">=5"
+    "ts-plugin-type-coverage": "^2.27.1",
+    "typescript": ">=5.4.2"
   },
   "devDependencies": {
     "@logicer/eslint-plugin": "^4.0.3",
     "@logicer/prettier-config": "^2.1.0",
     "@logicer/tsconfig": "file:.",
-    "@types/eslint": "^8.56.3"
+    "@types/eslint": "^8.56.5"
   }
 }
