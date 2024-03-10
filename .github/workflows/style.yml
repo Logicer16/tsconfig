@@ -18,27 +18,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: ">=8.10"
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-
-      - name: Cache npm dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          cache: pnpm
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install
 
       - name: Build
-        run: npm run build
+        run: pnpm build
 
       - name: Run ESLint
-        run: npm run lint:ci -- --output-file .eslint_report.json --format json
+        run: pnpm lint:ci -- --output-file .eslint_report.json --format json
         continue-on-error: true
 
       - name: Annotate ESLint Results
@@ -50,4 +48,4 @@ jobs:
           markdown-report-on-step-summary: true
 
       - name: Run Prettier
-        run: npm run prettier:ci
+        run: pnpm prettier:ci
