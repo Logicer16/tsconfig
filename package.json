@@ -6,6 +6,7 @@
   "type": "module",
   "main": "tsconfig.json",
   "scripts": {
+    "preinstall": "pnpx only-allow pnpm",
     "build": "tsc -p ./tsconfig.eslint.json",
     "style": "npm run lint && npm run prettier",
     "lint": "eslint . --fix --cache",
