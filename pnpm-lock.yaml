@@ -2324,6 +2324,8 @@ packages:
     resolution: {directory: '', type: directory}
     id: 'file:'
     name: '@logicer/tsconfig'
+    engines: {pnpm: '>=8.10.0'}
+    requiresBuild: true
     peerDependencies:
       ts-plugin-type-coverage: ^2.27.1
       typescript: '>=5.4.2'
